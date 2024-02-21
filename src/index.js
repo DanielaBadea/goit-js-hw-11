@@ -85,7 +85,7 @@ btnLoadMore.addEventListener('click', async () => {
             notiflix.Notify.failure('Sorry, there are no more images to load.');
             return;
         }
-        clearInput();
+        // clearInput();
         response.data.hits.forEach((img) => {
             const cardHTML= markupImagesCard(img);
             return gallery.insertAdjacentHTML('beforeend', cardHTML);
